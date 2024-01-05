@@ -1,0 +1,246 @@
+{
+	"info": {
+		"_postman_id": "da2f86a1-82ba-4ad0-b0b9-0779e106d0c9",
+		"name": "DjangoAuthApi_by_me",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25765027"
+	},
+	"item": [
+		{
+			"name": "UserRegistrationView",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"ankitsharma.p413@gmail.com\",\r\n    \"name\":\"ash\",\r\n    \"tc\":\"True\",\r\n    \"password\":\"ankit1234\",\r\n    \"password2\":\"ankit1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/UserRegistrationView",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"UserRegistrationView"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserLoginView",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"ankitsharma.p413@gmail.com\",\r\n    \"password\":\"ankit1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/UserLoginView",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"UserLoginView"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserProfileView",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA0MzcwOTIxLCJpYXQiOjE3MDQzNzA2MjEsImp0aSI6ImE3M2U3OTU3NjAyYjQ3YjZiY2FkMTM3ZDhmZWRhY2Y3IiwidXNlcl9pZCI6MTB9.kLswPO3n_LAePsBT8xW0-nesUOCiPJ0Qs8bYAkmn3UY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/UserProfileView",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"UserProfileView"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserChangePasswordView",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA0MzY1MjY3LCJpYXQiOjE3MDQzNjQ5NjcsImp0aSI6ImFlOWU4OWUwYmJkMDRkODk5ODNiNmZhNWFiMzFhNjRjIiwidXNlcl9pZCI6OX0.K0Hj1DrXX_179cQUWIMcygIMtZvo_jADtE42MQZ-wG4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"password\":\"ankit1234\",\r\n    \"password2\":\"ankit1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/UserChangePasswordView",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"UserChangePasswordView"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendUserPasswordResetEmailView",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"ankitsharma.p413@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/SendUserPasswordResetEmailView",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"SendUserPasswordResetEmailView"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserPasswordResetView",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"password\":\"django1234\",\r\n    \"password2\":\"django1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/UserPasswordResetView/OQ/c0adfo-dd68a133bacaaece346f64e5d2b8aca1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"UserPasswordResetView",
+						"OQ",
+						"c0adfo-dd68a133bacaaece346f64e5d2b8aca1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "delete_user",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
